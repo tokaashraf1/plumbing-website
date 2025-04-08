@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plumberon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="bg-white pt-3 position-absolute top-0 w-100 z-3">
+    <nav class="container d-flex justify-content-between">
+      <div>
+        <img src="img/header-logo.png" alt="logo" />
+      </div>
+      <div class="d-none d-md-flex gap-5 align-items-center">
+        <div class="d-flex gap-4 nav-icons">
+          <img src="img/facebook (1).png" alt="facebook" />
+          <img src="img/twitter (2).png" alt="twitter" />
+          <img src="img/instagram.png" alt="instagram" />
+        </div>
+
+        <div>
+          <button class="bg-orange py-2 px-4 border-0 border-radius btn-orange">
+            Get an Appointment
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="secondary-nav container bg-blue p-1 navbar-expand-md">
+      <button class="navbar-toggler bg-orange mt-1 border-radius text-white" type="button " data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <div class="d-flex justify-content-between align-items-center p-2 text-white">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex align-items-center px-md-4">
+            <ul class="d-flex flex-column flex-md-row gap-4 list-unstyled mb-0 align-items-center nav-links">
+              <li>
+                <a href="#" class="fw-bold text-decoration-none text-orange">Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">About us</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Service <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Page <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-none d-md-flex align-items-center gap-2 pe-2">
+          <div class="bg-orange border-radius p-2">
+            <img src="img/phone-call (2).png" alt="phone-call" />
+          </div>
+          <div class="text-end">
+            <small class="text-warning fw-bold">Emergency 24/7</small><br />
+            <span class="fw-bold fs-5">+(62)21 2002-2012</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero section -->
+  <section class="min-vh-100 hero text-break position-relative "
+    style="background-image: url('./img/hero-section.jpg'); background-size: cover; background-position: center;">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 overlay opacity-50 z-1"></div>
+    <div class="container position-relative z-2 text-white pt-5  ">
+      <div class=" d-flex flex-column flex-lg-row justify-content-between hero-container ">
+        <div class="  hero-box1">
+          <h1 class="fw-bold">We are the plumbing experts.</h1>
+          <p class="fs-3 mt-3">Congue nostra imperdiet condimentum nullam arcu dictumst dignissim nascetur</p>
+          <button class="bg-orange py-3 px-4 border-0 border-radius fs-5 btn-orange">
+            Discover More
+          </button>
+        </div>
+
+        <div class=" bg-white px-5 py-5 text-dark hero-box2 border-radius hero-form">
+          <h1 class=" fs-2">Get an Appointment</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
+            pulvinar dapibus leo.</p>
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-4">
+            <input type="text" class=" px-4 py-2  border-0 bg-gray" placeholder="Name">
+            <input type="text" class="px-4 py-2  border-0 bg-gray" placeholder="Phone">
+          </div>
+          <div class="d-flex justify-content-between flex-column flex-md-row  mt-3 gap-4">
+            <input type="text" class="px-4 py-2 border-0 bg-gray" placeholder="Email">
+            <input type="text" class="px-4 py-2  border-0 bg-gray" placeholder="Date">
+          </div>
+          <textarea placeholder="Message" class="mt-3 w-100 bg-gray border-0 px-4 py-4 "></textarea>
+          <button class="w-100 bg-orange py-2  border-0 border-radius  mt-3 btn-orange">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About Us  -->
+  <section class=" mt-5 text-break ">
+    <div class="container pt-5 d-flex flex-column flex-lg-row justify-content-between gap-5 about">
+
+      <div class="about-box1 position-relative d-inline-block">
+        <div class="bg-warning position-absolute "
+          style="bottom: -20px; left: 20px; width: 100%; height: 100%; z-index: 1;"></div>
+        <img src="./img/seconed-section-img.jpg" alt="img" class="img-fluid position-relative z-2">
+      </div>
+      <div class="about-box2 pt-5 ">
+        <p class="text-orange">about us</p>
+        <h1 class="fw-bold ">Professional Plumbing <br>
+          now in your Budget.</h1>
+        <p class="mt-4">Ut phasellus et finibus elit morbi sem. Eros fusce duis finibus turpis massa adipiscing tempor.
+          Ultrices ullamcorper dignissim sapien aptent molestie turpis elementum id si lacinia. Inceptos molestie
+          faucibus eu dignissim primis quisque non etiam class tortor.</p>
+        <div class=" d-flex  d-lg-none d-xl-flex flex-column flex-lg-row mt-4 gap-2 gap-lg-5 lh-1">
+          <div>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Nascetur sem pretium nec
+                libero</span></p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Porta pulvinar</span></p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Inceptos vel eget</span>
+            </p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Congue aliquam
+                aptent</span></p>
+          </div>
+          <div>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Nascetur sem pretium nec
+                libero</span></p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Porta pulvinar</span></p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Inceptos vel eget</span>
+            </p>
+            <p> <i class="fa fa-check text-orange" aria-hidden="true"></i> <span class="ms-2">Congue aliquam
+                aptent</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services  -->
+  <section class=" mt-lg-5 text-break ">
+    <div class="container pt-5">
+      <div class="pt-5 d-flex flex-column flex-lg-row justify-content-between align-items-center px-5 gap-5 gap-lg-0 ">
+        <div class=" d-flex justify-content-center align-items-center gap-4 ">
+          <div>
+            <img src="./img/user-avatar (2).png" alt="" style="width: 70px;">
+          </div>
+          <div class=" lh-1">
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="fs-2 fw-bold lh-sm"> 8,714 </p>
+              <p class="fw-bold text-orange fs-4">+</p>
+            </div>
+            <p>Happy Customer</p>
+          </div>
+        </div>
+
+        <div class=" d-flex justify-content-center align-items-center gap-4 ">
+          <div>
+            <img src="./img/bulding.png" alt="" style="width: 70px;">
+          </div>
+          <div class=" lh-1">
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="fs-2 fw-bold lh-sm">1,211 </p>
+              <p class="fw-bold text-orange fs-4">+</p>
+            </div>
+
+            <p>Provide Apartement</p>
+          </div>
+        </div>
+        <div class=" d-flex justify-content-center align-items-center gap-4 ">
+          <div>
+            <img src="./img/villa.png" alt="" style="width: 70px;">
+          </div>
+          <div class=" lh-1">
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="fs-2 fw-bold lh-sm">
+                1,244
+              </p>
+              <p class="fw-bold text-orange fs-4">+</p>
+            </div>
+
+            <p>Home Served</p>
+          </div>
+        </div>
+        <div class=" d-flex justify-content-center align-items-center gap-4 ">
+          <div>
+            <img src="./img/car.png" alt="" style="width: 70px;">
+          </div>
+          <div class=" lh-1">
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="fs-2 fw-bold lh-sm"> 174 </p>
+              <p class="fw-bold text-orange fs-4">+</p>
+            </div>
+            <p>Professional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solving things section -->
+  <section class="container-fluid p-0 mt-5">
+    <div class="row g-0  Solving-things-section ">
+      <!-- Left Image Column -->
+      <div class="col-md-6 position-relative ">
+        <img src="./img/video-img.jpg" class="w-100 h-100 object-fit-cover"
+          alt="Home service professional discussing with customer" />
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <div class="play-button rounded-circle d-flex align-items-center justify-content-center" id="playButton">
+            <i class="bi bi-play-fill play-icon fs-2 ms-1"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Right Content Column -->
+      <div class="col-md-6 bg-primary-custom text-white d-flex align-items-center py-5">
+        <div class="p-5 p-lg-5 p-md-4 p-sm-3 ms-md-5">
+          <h1 class="display-6 fw-bold mb-4">
+            Solving things beyond expectations
+          </h1>
+          <p class="fs-6 mb-4 lh-base">
+            Scelerisque viverra ipsum accumsan vehicula proin velit sit.
+            Sociosqu dictum senectus auctor sapien montes. Adipiscing volutpat
+            mauris cras orci arcu congue. Pulvinar finibus sodales maximus
+            vehicula scelerisque ante libero.
+          </p>
+          <button class="border-0 bg-orange fw-medium py-3 px-4 border-radius btn-orange">
+            Discover More
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="container-fluid h-100 d-flex align-items-center justify-content-center">
+      <div class="row w-100 justify-content-center">
+        <div class="col-11 col-lg-10 col-xl-9 position-relative bg-black rounded-3 overflow-hidden shadow-lg">
+          <div class="position-absolute top-0 end-0 m-3 z-3">
+            <button class="btn btn-sm btn-light rounded-circle p-2 d-flex align-items-center justify-content-center"
+              id="closeButton" style="width: 36px; height: 36px;">
+              <i class="bi bi-x fs-4"></i>
+            </button>
+          </div>
+          <iframe class="video-player" id="videoPlayer" src="https://www.youtube.com/embed/2Gg6Seob5Mg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services without limits -->
+  <section class="container py-5 ">
+    <div class="row mb-5 mt-5">
+      <div class="col-lg-7">
+        <p class="text-warning fw-bold mb-2">What we offer</p>
+        <h1 class="text-navy display-4 fw-bold mb-4">
+          Services without limits
+        </h1>
+      </div>
+      <div class="col-lg-5 mt-5">
+        <p class="text-muted">
+          Dis viverra class aenean vivamus sem tristique accumsan.
+          Consectetuer integer enim sodales consectetur justo habitasse at
+          torquent.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Service Card 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100  border-0 p-4">
+          <div class="service-icon">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h5 class="text-navy mb-3">Service & Repairs</h5>
+          <p class="text-muted small">
+            Sodales molestie bibendum faucibus amet lobortis nunc nullam
+            dignissim suscipit dictum fermentum
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100  border-0 p-4">
+          <div class="service-icon">
+            <i class="bi bi-wrench-adjustable"></i>
+          </div>
+          <h5 class="text-navy mb-3">Installation & Replace</h5>
+          <p class="text-muted small">
+            Sodales molestie bibendum faucibus amet lobortis nunc nullam
+            dignissim suscipit dictum fermentum
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100  border-0 p-4">
+          <div class="service-icon">
+            <i class="bi bi-droplet"></i>
+          </div>
+          <h5 class="text-navy mb-3">Facket & Leak Repair</h5>
+          <p class="text-muted small">
+            Sodales molestie bibendum faucibus amet lobortis nunc nullam
+            dignissim suscipit dictum fermentum
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100  border-0 p-4">
+          <div class="service-icon">
+            <i class="bi bi-water"></i>
+          </div>
+          <h5 class="text-navy mb-3">Drain Cleaning</h5>
+          <p class="text-muted small">
+            Sodales molestie bibendum faucibus amet lobortis nunc nullam
+            dignissim suscipit dictum fermentum
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- friendly plumbing services -->
+  <section class=" py-md-5 bg-gray">
+    <div class="container">
+      <div class="row align-items-center  ">
+        <!-- Left Content Section -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <!-- Header -->
+          <div class="mb-4 ps-4">
+            <small class="text-warning fw-bold">Why Choose Us</small>
+            <h1 class="fw-bold plumbing-heading ">
+              Providing friendly plumbing services
+            </h1>
+            <p class="text-muted">
+              Expert plumbing solutions for residential and commercial
+              properties. We deliver reliable, efficient, and professional
+              service with a focus on customer satisfaction.
+            </p>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="row g-4 px-xl-5 mt-4">
+            <!-- Feature 1 -->
+            <div class="col-md-6">
+              <div class="card border-0 bg-light  p-4  h-100">
+                <div class="icon-container">
+                  <i class="ri-team-line"></i>
+                </div>
+                <h5 class="card-title">Trusted Company</h5>
+                <p class="card-text text-muted">
+                  With over 15 years in the industry, we've built a reputation
+                  for reliability and excellence in every job we undertake.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6">
+              <div class="card border-0 bg-light  p-4  h-100">
+                <div class="icon-container">
+                  <i class="ri-medal-line"></i>
+                </div>
+                <h5 class="card-title">Experienced</h5>
+                <p class="card-text text-muted">
+                  Our team consists of highly skilled professionals with
+                  extensive experience in handling all types of plumbing issues.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6">
+              <div class="card border-0 bg-light  p-4  h-100">
+                <div class="icon-container">
+                  <i class="ri-award-line"></i>
+                </div>
+                <h5 class="card-title">Certified Worker</h5>
+                <p class="card-text text-muted">
+                  All our plumbers are fully certified and regularly trained on
+                  the latest techniques and safety standards in the industry.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6">
+              <div class="card border-0 bg-light p-4  h-100">
+                <div class="icon-container">
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
+                <h5 class="card-title">24/7 Support</h5>
+                <p class="card-text text-muted">
+                  We understand that plumbing emergencies can happen anytime,
+                  which is why our support team is available round the clock.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Image Section -->
+        <div class="col-lg-6 mt-4 mt-md-0 order-1 order-lg-2 ">
+          <div class="position-relative">
+            <div class="bg-warning position-absolute"
+              style="width: 100%; height: 90%; bottom: -20px; right: -20px; z-index: 1;"></div>
+            <img src="./img/friendly-plumbing1.jpg" class=" position-relative "
+              style="z-index: 2; width: 100%; height: 100%;" alt="Plumber working" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5"></div>
+  </section>
+
+  <!-- happy customers section -->
+  <section class="  d-flex align-items-center position-relative "
+    style="background: url('./img/happy-customer-section.jpg') center/cover no-repeat; min-height: 500px;">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 overlay opacity-50 "></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 text-white fw-bold mb-3">
+            Creating happy customers from our services
+          </h1>
+          <p class="text-white mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button class=" bg-orange py-2 px-4 border-0 border-radius btn-orange">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="text-orange">Testimonial</span>
+        <h2 class="display-5 fw-bold mt-2 mb-3">What They Say</h2>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div
+            class="testimonial-card border-radius shadow position-relative d-flex flex-column justify-content-between text-center mt-5">
+            <div class="quote-icon">
+              <i class="ri-double-quotes-l"></i>
+            </div>
+            <p>
+              Ut euisque ullamcorper tortor potenti sed bibendum ante
+              tincidunt hac nam. Faucibus pede porttitor hendrerit sodales
+              pretium. Ex bibendum lectus posuere aenean cras.
+            </p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="avatar d-flex align-items-center justify-content-center">
+              <img src="./img/david.jpg" alt="David Ricks" class="img-fluid object-cover" />
+
+            </div>
+
+          </div>
+          <p class="text-center">David Ricks</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div
+            class="testimonial-card border-radius shadow position-relative d-flex flex-column justify-content-between text-center mt-5">
+            <div class="quote-icon">
+              <i class="ri-double-quotes-l"></i>
+            </div>
+            <p>
+              Exceptionally professional service from start to finish. The
+              team was punctual, knowledgeable, and solved our complex
+              plumbing issue quickly. Would definitely recommend to anyone.
+            </p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="avatar d-flex align-items-center justify-content-center">
+              <img src="./img/david.jpg" alt="Sarah Johnson" class="img-fluid object-cover" />
+            </div>
+          </div>
+          <p class="text-center">David Ricks</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div
+            class="testimonial-card border-radius shadow position-relative d-flex flex-column justify-content-between text-center mt-5">
+            <div class="quote-icon">
+              <i class="ri-double-quotes-l"></i>
+            </div>
+            <p>
+              I've used many plumbing services over the years, but this
+              company stands out for their attention to detail and fair
+              pricing. They explained everything clearly and left my home
+              spotless.
+            </p>
+            <div class="rating">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+
+            <div class="avatar d-flex align-items-center justify-content-center">
+              <img src="./img/david.jpg" alt="Robert Chen" class="img-fluid object-cover" />
+            </div>
+          </div>
+          <p class="text-center">David Ricks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- footer -->
+  <footer class="bg-blue py-5">
+    <div class="container py-5">
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="./img//footer-logo.png" alt="logo">
+      </div>
+      <hr>
+      <div class="d-flex align-items-center justify-content-between flex-column flex-md-row">
+        <div>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <small class="text-white">Copyright © 2021 Plumberon. All rights reserved</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-3RUVaR3FUoGYgXDQYGFxNiRFY+/dUxXzRDhgVLBTXNmMF8ZX9/Lk1pU5Uw/XCj0" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
